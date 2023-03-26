@@ -8,8 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint:js": "eslint .src/",
-    "lint:css": "stylelint \"**/*.{css}\""
+    "lint:js": "eslint ./src",
+    "lint:css": "stylelint \"**/*.css\" --fix"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -17,8 +17,9 @@ export const useState = () => {
   return useContext<typeof store>(RootStoreContext);
 };
 
-export const withStore = (component: () => ReactNode) => () => {
-  <RootStoreContext.Provider value={store}>
-    {component()}
-  </RootStoreContext.Provider>;
-};
+export const withStore = (component: () => ReactNode) => () =>
+  (
+    <RootStoreContext.Provider value={store}>
+      {component()}
+    </RootStoreContext.Provider>
+  );

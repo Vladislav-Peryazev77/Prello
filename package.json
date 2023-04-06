@@ -8,8 +8,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint:js": "eslint .src/",
-    "lint:css": "stylelint \"**/*.{css}\""
+    "lint:js": "eslint ./src",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix"
   },
   "dependencies": {
     "classnames": "^2.3.2",
@@ -24,10 +25,13 @@
   },
   "devDependencies": {
     "@types/compose-function": "^0.0.30",
+    "@types/node": "^18.15.10",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.36.0",

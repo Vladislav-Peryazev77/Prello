@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { App } from "@/app";
+import "@/shared/lib/sentry";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
+    <button onClick={() => methodDoesNotExist()}>Break the world</button>;
     <App />
   </React.StrictMode>
 );

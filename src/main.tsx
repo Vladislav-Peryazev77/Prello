@@ -5,7 +5,6 @@ import "@/shared/lib/sentry";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <button onClick={() => methodDoesNotExist()}>Break the world</button>;
     <App />
   </React.StrictMode>
 );

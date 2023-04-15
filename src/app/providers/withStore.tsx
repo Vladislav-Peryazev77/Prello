@@ -1,5 +1,6 @@
 import { ReactNode, createContext, useContext } from "react";
 import { configure } from "mobx";
+import { IS_DEVTOOLS } from "@/shared/config";
 
 configure({
   enforceActions: "always",
@@ -13,7 +14,7 @@ const store = {};
 
 const RootStoreContext = createContext<typeof store>(store);
 
-export const useState = () => {
+export const useStore = () => {
   return useContext<typeof store>(RootStoreContext);
 };
 
@@ -23,3 +24,7 @@ export const withStore = (component: () => ReactNode) => () =>
       {component()}
     </RootStoreContext.Provider>
   );
+
+if (IS_DEVTOOLS) {
+  window._store_ = store;
+}

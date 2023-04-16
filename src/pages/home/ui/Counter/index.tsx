@@ -1,5 +1,4 @@
 import { observer } from "mobx-react-lite";
-
 import { useStore } from "@/app/providers/withStore";
 
 export const Counter = observer(() => {

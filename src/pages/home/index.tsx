@@ -1,12 +1,7 @@
 import styles from "./styles.module.css";
-import { Counter } from "@/pages/home/ui";
 
 const HomePage = () => {
-  return (
-    <main className={styles.root}>
-      <Counter />
-    </main>
-  );
+  return <main className={styles.root}>Home page</main>;
 };
 
 export default HomePage;

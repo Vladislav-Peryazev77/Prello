@@ -1,10 +1,10 @@
 import * as Sentry from "@sentry/react";
 import { SENTRY_DSN } from "@/shared/config/sentry";
 
-const integrations = new Sentry.BrowserTracing();
+const integrations = [new Sentry.BrowserTracing()];
 const options = {
   dsn: SENTRY_DSN,
-  integrations: [new Sentry.BrowserTracing()],
+  integrations,
   tracesSampleRate: 1.0,
 };
 

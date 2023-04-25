@@ -12,3 +12,12 @@
 .form {
   margin-top: 32px;
 }
+
+.main {
+  padding: 0 16px;
+  background-color: white;
+}
+
+.logomark {
+  margin-bottom: 24px;
+}

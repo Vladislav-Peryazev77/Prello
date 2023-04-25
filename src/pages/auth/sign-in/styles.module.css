@@ -1,0 +1,23 @@
+.headline {
+  margin-bottom: 8px;
+  color: var(--color-gray-900);
+  font: var(--font-display-xs-semibold);
+}
+
+.description {
+  color: var(--color-gray-600);
+  font: var(--font-text-md-regular);
+}
+
+.form {
+  margin-top: 32px;
+}
+
+.main {
+  padding: 0 16px;
+  background-color: white;
+}
+
+.logomark {
+  margin-bottom: 24px;
+}

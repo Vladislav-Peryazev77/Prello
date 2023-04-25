@@ -1,0 +1,4 @@
+.span {
+  color: var(--color-gray-700);
+  font: var(--font-text-md-regular);
+}
